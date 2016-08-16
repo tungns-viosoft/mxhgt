@@ -34,7 +34,19 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  /**** API ****/
+
+  'GET /feed': 'FeedController.read',
+
+  'POST /feed': 'FeedController.create',
+
+  'PUT /feed' : 'FeedController.edit',
+
+  'DELETE /feed' : 'FeedController.delete',
+
+
 
   /***************************************************************************
   *                                                                          *
